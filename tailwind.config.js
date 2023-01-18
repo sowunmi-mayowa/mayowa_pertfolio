@@ -4,7 +4,18 @@ module.exports = {
     "./dist/**/*.{html,js}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        bgone: "#b3ffab",
+        bgtwo: "#12fff7"
+      },
+      backgroundImage:{
+        // bgpattern: "url('/assets/topography.svg')"
+      },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
