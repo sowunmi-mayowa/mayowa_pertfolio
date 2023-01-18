@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
 </head>
-<body >
+<body>
     <div class="bg-blue-600 text-white absolute top-0 right-0 z-10 hidden p-4 h-full w-1/4 md:1/4" id="mob-nav">
         <svg id="close"  class=" cursor-pointer absolute top-0 right-0 p-4" style="max-width: 80px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
             <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm-1.72 6.97a.75.75 0 10-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 101.06 1.06L12 13.06l1.72 1.72a.75.75 0 101.06-1.06L13.06 12l1.72-1.72a.75.75 0 10-1.06-1.06L12 10.94l-1.72-1.72z" clip-rule="evenodd" />
@@ -19,27 +19,30 @@
         </ul> 
     </div>
     <div class="hidden md:block">
-        <nav class="flex items-center justify-between relative bg-blue-600 text-white font-bold text-lg px-8 py-4 mb-6">
+        <nav class="flex items-center justify-between relative bg-blue-600 text-white font-bold text-lg px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 lg:px-16 lg:sticky">
             <div>
                 <h1>Oluwamayowa.dev</h1>
             </div>
             <div class="transition-all delay-50 ease-in">
                 <ul class="hidden lg:block">
-                    <li class="inline-block mx-2 cursor-pointer">Home</li>
-                    <li class="inline-block mx-2 cursor-pointer">About</li>
+                    <a href="#home"><li class="inline-block mx-2 cursor-pointer">Home</li></a>
+                    <a href="#about"><li class="inline-block mx-2 cursor-pointer">About</li></a>
                     <li class="inline-block mx-2 cursor-pointer">Projects</li>
                     <li class="inline-block mx-2 cursor-pointer">Contact</li>
                 </ul>
-                <svg id="menu-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-                    <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
-                  </svg>
-                        
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" id="menu-btn" class="font-bold cursor-pointer w-6 h-6 hidden md:block lg:hidden">
+                    <path  fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+                  </svg>                        
             </div>
         </nav>
     </div>
+
+    <div class="md:hidden bg-gradient-to-r from-cyan-500 to-blue-500" align="center">
+        <img src="./assets/logos.png" alt="oluwamayowa" class="w-1/2">
+    </div>
     
     <div id="mob-nav" class="md:hidden capitalize text-white relative">
-        <div class="= fixed bottom-0 left-0 right-0 bg-blue-600 flex items-center justify-between px-8 py-4">
+        <div class="= fixed bottom-0 left-0 right-0 bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-between px-8 py-4">
             <div class="flex items-center justify-center flex-col cursor-pointer transition ease-in-out delay-150hover:-translate-y-1 hover:scale-110">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                     <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
@@ -71,8 +74,18 @@
         </div>
     </div>
     <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquam iste suscipit perferendis nisi sequi quas, laudantium facilis, blanditiis sit amet, deserunt numquam quis impedit laborum quasi in nostrum quae.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus architecto alias earum, rerum, assumenda minima, expedita aperiam odio dolorem labore in ab excepturi ipsam blanditiis veniam voluptate. Ratione, quae. Aut.
+    </div>
+
+    <div class="flex flex-col md:flex-row items-center justify-between mx-8 lg:mx-16 my-8 bg-white rounded-xl font-inter shadow-lg" id="#home">
+        <div>
+           <p class="px-4 pt-4 text-lg font-bold lg:pl-16 md:text-2xl">HI, my name is <span class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text"> Sowunmi Oluwamayowa</span></p>
+           <p class="px-4 lg:pl-16 md:text-lg my-2 md:my-4">I am a frontend developer and i am very passionate about creating beautiful websites your user will love</p> 
+           <button class="capitalize bg-gradient-to-r from-cyan-500 to-blue-500 text-white px-4 py-2 text-sm mg:text-lg md:px-8 md:py-4 rounded-lg ml-4 lg:ml-16 cursor-pointer">Get to know me</button>
+        </div>
+        <img src="./assets/header img.png" alt="oluwamayowa" class="w-3/4 lg:w-1/2 h-full">
+    </div>
+    <div id="about" class="px-16">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim, fuga! Cumque consequuntur voluptatum sint! Aspernatur vitae eligendi labore eum tempore nesciunt maxime, vero eveniet blanditiis quae nemo repellat? Dolore, consectetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis molestias architecto officia ut, unde quidem, saepe ducimus fugiat consectetur quae totam cumque autem recusandae modi corporis quis ipsum id mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nemo cumque eligendi unde! Vel dolor delectus numquam reiciendis explicabo voluptas dolore molestias atque nesciunt! Deleniti porro dolore nesciunt nemo inventore.
     </div>
     <script src="./menu.js"></script>
 </body>
