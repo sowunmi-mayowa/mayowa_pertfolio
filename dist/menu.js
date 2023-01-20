@@ -11,7 +11,12 @@ function closeMenu() {
     document.querySelector("#tab-nav").style.display = "none";
 }
 
-if(window.screen.width <= "425"){
-    alert("working");
-    
+if(window.screen.availWidth == "425px"){
+    window.onscroll = () => {
+        if(window.innerHeight + window.pageYOffset >= document.body.offsetHeight){
+            document.querySelector("#mob-nav").style.display = "none"
+        }else{
+            document.querySelector("#mob-nav").style.display = "block"
+        }
+    }
 }
