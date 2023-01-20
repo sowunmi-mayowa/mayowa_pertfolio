@@ -11,10 +11,7 @@ function closeMenu() {
     document.querySelector("#tab-nav").style.display = "none";
 }
 
-window.onscroll = () => {
-    if(window.innerHeight + window.pageYOffset >= document.body.offsetHeight){
-        document.querySelector("#mob-nav").style.display = "none"
-    }else{
-        document.querySelector("#mob-nav").style.display = "block"
-    }
+if(window.screen.width <= "425"){
+    alert("working");
+    
 }
