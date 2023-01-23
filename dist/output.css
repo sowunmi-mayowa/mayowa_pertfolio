@@ -567,6 +567,11 @@ video {
   margin-bottom: 2rem;
 }
 
+.mx-16{
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
 .mt-20{
   margin-top: 5rem;
 }
@@ -771,6 +776,10 @@ video {
   padding-top: 1rem;
 }
 
+.text-justify{
+  text-align: justify;
+}
+
 .font-inter{
   font-family: Inter, sans-serif;
 }
@@ -899,6 +908,11 @@ body{
   .md\:py-4{
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   .md\:text-3xl{
