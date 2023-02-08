@@ -29,7 +29,7 @@
                     <a href="#home"><li class="inline-block mx-2 cursor-pointer">Home</li></a>
                     <a href="#about"><li class="inline-block mx-2 cursor-pointer">About</li></a>
                     <li class="inline-block mx-2 cursor-pointer">Projects</li>
-                    <li class="inline-block mx-2 cursor-pointer">Contact</li>
+                    <a href="#contact"><li class="inline-block mx-2 cursor-pointer">Contact</li></a>
                 </ul>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" id="menu-btn" class="font-bold cursor-pointer w-6 h-6 hidden md:block lg:hidden">
                     <path  fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
@@ -87,7 +87,7 @@
     </div>
     
     <section id="about" class="hidden md:block">
-        <div class="px-8 lg:px-16 text-lg leading-8 flex flex-col lg:flex-row items-center justify-between my-8">
+        <div class="px-8 lg:px-16 text-lg leading-8 flex flex-col lg:flex-row items-center justify-between py-24">
             <img src="./assets/undraw_selecting_team_re_ndkb.svg" alt="about svg" class="lg:w-2/5 p-8">
             <div class="text-justify">
                 <p>My name is Sowunmi Oluwamayowa, I am a recent graduate from the Federal Polytechnic Ilaro, where I earned my degree in Computer Science. During my time in the polytechnic, I was a member of Programmers' Hub and i served as the vice president of 2021/2022 academic session. I am also a self-taught web developer. I have always been fascinated by the power of the internet and enjoy using my skills to build websites that are both functional and visually appealing. I am also passionate about technology and am always looking to learn new programming languages and development tools.In my free time, I enjoy graphics designing with adobe photoshop, watching movies and playing games.I am currently seeking a job in software development and would love to connect with others in the industry. Please feel free to reach out to me at </p>
@@ -123,18 +123,18 @@
                   <path fill-rule="evenodd" d="M12.556 17.329l4.183 4.182a3.375 3.375 0 004.773-4.773l-3.306-3.305a6.803 6.803 0 01-1.53.043c-.394-.034-.682-.006-.867.042a.589.589 0 00-.167.063l-3.086 3.748zm3.414-1.36a.75.75 0 011.06 0l1.875 1.876a.75.75 0 11-1.06 1.06L15.97 17.03a.75.75 0 010-1.06z" clip-rule="evenodd" />
                 </svg>
 
-                <h3>Projects</h3>
+                <a href="./routes/projects.html"><h3>Projects</h3></a>
           </div>
           <div class="flex items-center justify-center flex-col cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
                   <path fill-rule="evenodd" d="M4.848 2.771A49.144 49.144 0 0112 2.25c2.43 0 4.817.178 7.152.52 1.978.292 3.348 2.024 3.348 3.97v6.02c0 1.946-1.37 3.678-3.348 3.97a48.901 48.901 0 01-3.476.383.39.39 0 00-.297.17l-2.755 4.133a.75.75 0 01-1.248 0l-2.755-4.133a.39.39 0 00-.297-.17 48.9 48.9 0 01-3.476-.384c-1.978-.29-3.348-2.024-3.348-3.97V6.741c0-1.946 1.37-3.68 3.348-3.97zM6.75 8.25a.75.75 0 01.75-.75h9a.75.75 0 010 1.5h-9a.75.75 0 01-.75-.75zm.75 2.25a.75.75 0 000 1.5H12a.75.75 0 000-1.5H7.5z" clip-rule="evenodd" />
                 </svg>                                 
-          <h3>contact</h3>
+                <a href="./routes/contact.html"><h3>contact</h3></a>
           </div>
       </div>
   </div>
 
-    <form name="contact" method="POST" data-netlify="true" class="hidden md:block">
+    <form name="contact" method="POST" data-netlify="true" class="hidden md:block" id="contact">
         <section class="text-gray-600 body-font relative">
             <div class="container px-5 py-24 mx-auto">
               <div class="flex flex-col text-center w-full mb-12">
